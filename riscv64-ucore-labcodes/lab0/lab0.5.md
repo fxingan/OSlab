@@ -75,7 +75,7 @@ riscv_find_and_load_firmware(machine, BIOS_FILENAME,
 
 接着查看并执行0x80000000后的指令。在0x80200000处设置断点后运行到断点位置，发现在qemu模拟计算机的终端处输出
 
-![image-20230917154025019](C:\Users\24505\Desktop\lab0.5.assets\image-20230917154025019.png)
+![image-20230917154025019](https://github.com/fxingan/OSlab/assets/112965322/5d77897d-0b2a-4194-a084-3fb120a94515)
 
 
 说明OPENSBI程序成功执行将操作系统加载到内存并将要执行应用程序的第一条指令。
