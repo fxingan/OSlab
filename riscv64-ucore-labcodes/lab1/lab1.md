@@ -109,12 +109,16 @@ sscratch 寄存器是 RISC-V 架构中的一个特殊寄存器，通常用于保
 
 ```
 cprintf("Exception type:Illegal instruction\n");
+
 cprintf("Illegal instruction caught at %lx\n", tf->epc);
+
 tf->epc += 4;
 ```
 ```
 cprintf("Exception type: breakpoint\n");
+
 cprintf("ebreak caught at %lx\n", tf->epc);
+
 tf->epc += 4;
 ```
 
